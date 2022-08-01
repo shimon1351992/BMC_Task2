@@ -13,12 +13,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'javac Client/Client.java'
+                sh 'javac Client/Client.java'
             }
         }
         stage('Run') {
             steps {
-              bat """
+              sh """
               cd Client
               java Client ${HOSTNAME} ${PATH1}
               """
