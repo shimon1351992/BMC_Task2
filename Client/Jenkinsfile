@@ -1,7 +1,7 @@
 
 pipeline {
     agent {
-       label 'win_agent'   
+       label 'ssh-agent'   
     }
          
     
