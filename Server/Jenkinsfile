@@ -1,0 +1,22 @@
+pipeline {
+    agent {
+       label 'win_agent'   
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+                bat 'javac Server/Server.java'
+            }
+        }
+        stage('Run') {
+            steps {
+               bat """
+               cd Server
+               java Server
+               """
+        }
+    }
+  } 
+}
