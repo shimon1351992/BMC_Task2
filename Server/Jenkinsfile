@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'javac /home/jenkins/workspace/client/Client/Server/Server.java'
+                sh 'javac Server/Server.java'
             }
         }
         stage('Run') {
