@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'javac Client/Client.java'
+                sh 'javac /home/jenkins/workspace/client/Client/Client/Client.java'
             }
         }
         stage('Run') {
