@@ -15,7 +15,7 @@ pipeline {
             steps {
              
                 sh """
-                  javac Server/Server.java
+                  javac Server.java
                 """
             }
         }
