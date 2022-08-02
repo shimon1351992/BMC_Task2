@@ -12,9 +12,9 @@ pipeline {
         }
           stage('build') {
             steps {
-                sh "chmod +x -R ${env.WORKSPACE}"
-                sh """
-                Server/Server.java"""
+                sh 'chmod +x -R ${env.WORKSPACE}'
+                sh '
+                Server/Server.java'
             }
         }
         stage('Run') {
