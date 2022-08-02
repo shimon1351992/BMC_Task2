@@ -7,13 +7,13 @@ pipeline {
         stage('directory') {
             steps {
                 echo 'Building..'
-                sh """ls"""
+                bash """ls"""
             }
         }
           stage('build') {
             steps {
-                sh "chmod +x -R ${env.WORKSPACE}";
-                sh "./Server/Server.java"
+                bash "chmod +x -R ${env.WORKSPACE}";
+                bash "./Server/Server.java"
             }
         }
         stage('Run') {
