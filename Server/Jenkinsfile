@@ -14,7 +14,8 @@ pipeline {
         stage('build') {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh '''Server/Server.java'''
+                sh ''' #!/usr/bin/env bash
+                Server/Server.java'''
             }
         }
         stage('Run') {
