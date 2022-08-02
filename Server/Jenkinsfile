@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
               
-                sh './Server.java'
+                sh 'Server/Server.java'
             }
         }
         stage('Run') {
