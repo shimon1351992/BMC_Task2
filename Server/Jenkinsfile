@@ -7,18 +7,12 @@ pipeline {
         stage('directory') {
             steps {
                 echo 'Building..'
+                sh """pwd"""
                 sh """ls"""
             }
         }
      
-        stage('Run') {
-            steps {
-              sh """
-              cd Server
-              java Server
-              """
-            }
-        }
+     
         
     
     
