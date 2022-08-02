@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                sudo Server/Server.java
+                Server/Server.java
                 """
             }
         }
