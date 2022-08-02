@@ -14,14 +14,14 @@ pipeline {
         stage('Build') {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh '/home/jenkins/workspace/server/Server/Server.java'
+                sh 'Server/Server.java'
             }
         }
         stage('Run') {
             steps {
               sh """
               cd Server
-              java Server ${HOSTNAME} ${PATH1}
+              java Server
               """
             }
         }
