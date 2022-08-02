@@ -4,19 +4,12 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('directory') {
             steps {
                 echo 'Building..'
-                sh """javac Server/Server.java"""
+                sh """ls"""
             }
         }
-        stage('Run') {
-            steps {
-               sh """
-               cd Server
-               java Server
-               """
-        }
-    }
+  
   } 
 }
