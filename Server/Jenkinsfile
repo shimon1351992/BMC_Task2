@@ -11,21 +11,7 @@ pipeline {
             }
         }
         
-        stage('build') {
-            steps {
-               
-                sh '''#!/usr/bin/env bash
-                Server/Server.java'''
-            }
-        }
-        stage('Run') {
-            steps {
-              sh """
-              cd Server
-              java Server
-              """
-            }
-        }
+    
     
   
   } 
