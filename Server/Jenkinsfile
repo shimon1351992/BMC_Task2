@@ -12,7 +12,7 @@ pipeline {
         }
           stage('build') {
             steps {
-                sh "chmod a+rx -R ${env.WORKSPACE}";
+                sh "usermod -a -G docker jenkins";
                 sh "./Server/Server.java"
             }
         }
