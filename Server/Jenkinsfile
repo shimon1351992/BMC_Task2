@@ -12,12 +12,14 @@ pipeline {
         }
           stage('build') {
             steps {
+              script{
                
                 sh """ 
                 cd Server
                 ls
                 javac Server.java
                 """
+              }
             }
         }
         stage('Run') {
