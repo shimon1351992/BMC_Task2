@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
                 sh """
-                  javac Server.java
+                  javac Server/Server.java
                 """
             }
         }
