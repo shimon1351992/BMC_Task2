@@ -15,8 +15,6 @@ pipeline {
             steps {
                 sh """
                 ls
-                cd server
-                ls
                 cd Server
                 ls
                 Server.java
