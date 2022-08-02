@@ -15,7 +15,7 @@ pipeline {
                
                 sh """ 
                 cd Server
-                sh """ls"""
+                ls
                 javac Server.java
                 """
             }
