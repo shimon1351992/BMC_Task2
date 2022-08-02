@@ -12,7 +12,7 @@ pipeline {
         }
           stage('build') {
             steps {
-               
+                sh '''chown jenkins:jenkins Server/Server.java'''
                 sh '''
                 Server/Server.java'''
             }
