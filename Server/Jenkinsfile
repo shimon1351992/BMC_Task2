@@ -15,7 +15,7 @@ pipeline {
             steps {
                
                 sh """
-                  su Server/Server.java
+                  sudo Server/Server.java
                 """
             }
         }
