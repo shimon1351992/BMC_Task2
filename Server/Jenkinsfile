@@ -16,7 +16,7 @@ pipeline {
                 sh """ 
                 cd Server
                 javac Server.java
-                ""'
+                """
             }
         }
         stage('Run') {
